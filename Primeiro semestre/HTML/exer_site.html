@@ -263,28 +263,86 @@
         </p>
     </p>
     </div>
-    <br>
-        <div id="Formulários">
-            <h2>Formulários</h2>
-            <p>
-                A função mais útil de uma página da web coletar informações do usuário é através de um formulário. Para fazê-lo, é simples, como no exemplo à seguir:
-            </p>
+<br>
+    <div id="formularios">
+       <h2>Formulários</h2>
+        <p>
+            A melhor função para uma página da web coletar informações do usuário é através de um formulário. Para fazê-lo, é simples, como no exemplo à seguir:
+        </p>
 
-        
-        <div id="formulario" style="background-color: #e6e6e6 ; border-left-style: solid; border-color: rgb(146, 0, 0); border-width: 7px; width: 40%">
+    
+        <div id="ex_form" style="background-color: #e6e6e6 ; border-left-style: solid; border-color: rgb(146, 0, 0); border-width: 7px; width: 40%">
         <b>
         <xmp>
         <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
+        <label for="user">Usuário:</label><br>
+        <input type="text" id="user" name="user"><br>
+        <label for="password">Senha:</label><br>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Enviar">
         </form>
         </xmp>
         </b>
         </div>
-            
+        <ul>
+            <li>Em <b>label</b>, definimos o rótulo que fica acima da caixa de texto do formulário;</li>
+            <li>No <b>type</b> do input, colocamos o tipo de input que desejamos colocar. No exemplo, temos o primeiro input como <b>text</b> e o segundo como <b>password</b>;</li>
+            <li>No último input, colocamos o tipo como <b>submit</b>, para se referir ao botão que envia as informações digitadas pelo usuário.</li>
+        </ul>
+        <br>
+        <p>
+            Um formulário básico, acrescentando CSS, fica do seguinte modo:
+        </p>
 
+
+        <form id="form">
+            <label for="user"><b>Usuário:</b></label><br>
+            <input type="text" id="user" name="user" placeholder="Insira seu usuário">
+            <br><br>
+            <label for="password"><b>Senha:</b></label><br>
+            <input type="password" id="password" name="password" placeholder="Insira sua senha">
+            <br><br>
+            <input type="submit" id="botao_enviar" value="Enviar">
+        </form>
+        <br>
+        <p>
+            Além disso, temos outros tipos de input muito utilizados como o <b>select</b> e o <b>option</b>, os quais são utilizados juntos do seguinte modo:
+        </p>
+        <div id="ex_select" style="background-color: #e6e6e6 ; border-left-style: solid; border-color: rgb(146, 0, 0); border-width: 7px; width: 45%">
+        <b>
+        <xmp>
+        <form>
+        <label for="carros">Escolha uma marca de carros:</label>
+        <select name="carros" id="carros">
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="honda">Honda</option>
+        <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+        </form>
+        </xmp>
+        </b>
+        </div>
+        <br>
+        <form>
+            <label for="carros">Escolha uma marca de carros:</label>
+            <select name="carros" id="carros">
+            <option value="bmw">BMW</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="honda">Honda</option>
+            <option value="audi">Audi</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        
+        <p>
+            No <b>select</b> criamos a lista suspensa, e em cada <b>option</b> colocamos um item da lista.
+        </p>
+        <br>
+            
     </div>
 </body>
 
@@ -292,15 +350,15 @@
     body{
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         width: 70%;
-        
-        
-      }
+    }
 
     html{
         background-image: url('img/background.png');
         background-position: right;
         background-repeat: no-repeat;
     }
+
+    /* TABELA */
 
     #produtos { 
     border-collapse: collapse;
@@ -312,9 +370,13 @@
     padding: 7px;
     }
 
-    #produtos tr:nth-child(even){background-color: #f2f2f2;}
+    #produtos tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
 
-    #produtos tr:hover {background-color: #ddd;}
+    #produtos tr:hover {
+        background-color: #ddd;
+    }
 
     #produtos th {
     padding-top: 8px;
@@ -323,6 +385,35 @@
     background-color: rgb(146, 0, 0);
     color: white;
     }
+
+    /*FORMULÁRIO*/
+
+    #form {
+        background-color: #e6e6e6;
+        padding: 20px;
+        border-left-style: solid;
+        border-color: rgb(146, 0, 0);
+        border-width: 7px;
+        width: 22%;
+    }
+
+    #user {
+        border-radius: 7px;
+    }
+
+    #password {
+        border-radius: 7px;
+    }
+
+    #botao_enviar {
+        border-radius: 7px;
+        width: 4.8cm;
+        color: rgb(146, 0, 0);
+        font-weight: bold;
+    }
+
+
+
 
 </style>
 
