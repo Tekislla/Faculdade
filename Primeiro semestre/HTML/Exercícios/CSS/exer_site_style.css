@@ -1,0 +1,103 @@
+    body {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 70%;
+    }
+
+    html {
+        background-image: url('../img/background.png');
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    #ex_style {
+        background-color: #e6e6e6;
+        border-left-style: solid;
+        border-color: rgb(146, 0, 0);
+        border-width: 7px;
+        width: 90%;
+    }
+
+    #ex_select {
+        background-color: #e6e6e6;
+        border-left-style: solid;
+        border-color: rgb(146, 0, 0);
+        border-width: 7px; width: 45%;
+    }
+
+    #ex_form {
+        background-color: #e6e6e6;
+        border-left-style: solid;
+        border-color: rgb(146, 0, 0);
+        border-width: 7px;
+        width: 40%;
+    }
+
+    #estrutura_cod {
+        background-color: #e6e6e6;
+        border-left-style: solid;
+        border-color: rgb(146, 0, 0);
+        border-width: 7px;
+        width: 70%;
+    }
+
+    #table {
+        background-color: #e6e6e6;
+        border-left-style: solid;
+        border-color: rgb(146, 0, 0);
+        border-width: 7px;
+        width: 40%;
+    }
+
+    /* TABELA */
+
+    #produtos { 
+    border-collapse: collapse;
+    width: 50%;
+    }
+
+    #produtos td {
+    border: 1px solid grey;
+    padding: 7px;
+    }
+
+    #produtos tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+
+    #produtos tr:hover {
+        background-color: #ddd;
+    }
+
+    #produtos th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: rgb(146, 0, 0);
+    color: white;
+    }
+
+    /*FORMULÁRIO*/
+
+    #form {
+        background-color: #e6e6e6;
+        padding: 20px;
+        border-left-style: solid;
+        border-color: rgb(146, 0, 0);
+        border-width: 7px;
+        width: 22%;
+    }
+
+    #user {
+        border-radius: 7px;
+    }
+
+    #password {
+        border-radius: 7px;
+    }
+
+    #botao_enviar {
+        border-radius: 7px;
+        width: 4.8cm;
+        color: rgb(146, 0, 0);
+        font-weight: bold;
+    }
