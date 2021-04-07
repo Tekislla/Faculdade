@@ -1,51 +1,39 @@
 /*
-Exercício - peça ao usuário e imprima seus dados na tela:
-Nome
-Endereço
-Telefone
-Email
+Construir um algoritmo que mostre:
+Nome (char *vetor*) [%s]
+Idade(int) [%i]
+Altura(float) [%f]
+Sexo(char) [%c]
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void){
+    char nome[50], sexo;
+    int idade;
+    float altura;
 
-    /*
-    char[] -> diz que a variável armazena caracteres e dentro do [] é informado o número de caracteres
-    */
+    printf("Digite o seu nome: ");
+    gets(nome); //scanf("%s", &nome);
+    fflush(stdin);
 
-	// variáveis
-	char nome[50], endereco[50], telefone[15], email[50];
-	
-    /*
-    gets -> pede que o usuário digite a informação
-    fflush -> limpa buffer do teclado
-    */
+    printf("Digite sua idade: ");
+    scanf("%i", &idade);
+    fflush(stdin);
 
-	// entrada de dados
-	printf("Digite seu nome: ");
-	gets(nome);
-	fflush(stdin);
-	printf("Digite seu endereco: ");
-	gets(endereco);
-	fflush(stdin);
-	printf("Digite o telefone: ");
-	gets(telefone);
-	fflush(stdin);
-	printf("Digite o email: ");
-	gets(email);
-	fflush(stdin);
-	
-    /*
-    %s se refere à string
-    */
+    printf("Digite sua altura: ");
+    scanf("%f", &altura);
+    fflush(stdin);
+    
+    printf("Qual seu sexo? (M ou F): ");
+    scanf("%c", &sexo);
+    fflush(stdin);
+    
+    printf("Seu nome eh %s\n", nome);
+    printf("Sua idade eh %i\n", idade);
+    printf("Sua altura eh %.2f\n", altura);
+    printf("Seu sexo eh %c\n", sexo);
 
-    // saída de dados
-	printf("Nome: %s\n",nome);
-	printf("Endereco: %s\n",endereco);
-	printf("Telefone: %s\n",telefone);
-	printf("Email: %s\n",email);
-	
-	return 0;
+    return 0;
 }
