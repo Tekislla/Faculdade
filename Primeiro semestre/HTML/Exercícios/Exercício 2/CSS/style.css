@@ -1,0 +1,61 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo {
+    color: grey;
+}
+
+.fonte_peq {
+    font-size: smaller;
+    color:grey;
+}
+
+.fonte_peq2 {
+    font-size: small;
+    color:grey;
+}
+
+#logo {
+    width: 170px;
+}
+
+#cabecalho {
+    height: 80px;
+    width: 100%;
+    background-color: #9b1536;
+}
+
+#col2 {
+    background-color: #f6f6f6;
+    padding-left: 3%;
+    padding-bottom: 5%;
+}
+
+#lado_video {
+    padding-left: 20%;
+}
+
+
+#col_coord {
+    padding-bottom: 20%;
+}
+
+#icon {
+    border-radius: 50%;
+    width: 20%;
+    margin-top: 3%;
+    border-style: solid;
+    border-color: darkgrey;
+}
+
+#col_coord {
+    padding-left: 20px;
+}
+
+#informacoes {
+    padding-left: 120px;
+    border-style: solid;
+    border-color: white;
+    padding-bottom: 37px;
+}
