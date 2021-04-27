@@ -1,6 +1,6 @@
 /*
 Construir um algoritmo que calcule a área de um círculo
-Fórmula: A = 2 * pi * r
+Fórmula: A = PI * R²
 Pedir o raio
 */
 
