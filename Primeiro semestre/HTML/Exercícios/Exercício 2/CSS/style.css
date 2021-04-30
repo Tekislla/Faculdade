@@ -23,6 +23,10 @@ body {
     width: 170px;
 }
 
+#logo_carousel {
+    width: 60px;
+}
+
 #cabecalho {
     height: 80px;
     width: 100%;
