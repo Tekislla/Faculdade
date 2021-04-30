@@ -39,11 +39,6 @@ body {
     padding-left: 20%;
 }
 
-
-#col_coord {
-    padding-bottom: 20%;
-}
-
 #icon {
     border-radius: 50%;
     width: 20%;
@@ -54,6 +49,7 @@ body {
 
 #col_coord {
     padding-left: 20px;
+    padding-bottom: 20%;
 }
 
 #informacoes {
@@ -61,4 +57,75 @@ body {
     border-style: solid;
     border-color: white;
     padding-bottom: 37px;
+}
+
+/*                           CAROUSEL                         */
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Esconder imagens */
+.mySlides {
+  display: none;
+}
+
+/* Botões */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posição next */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hover botão */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto slides (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

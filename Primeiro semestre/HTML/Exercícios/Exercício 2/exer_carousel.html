@@ -1,0 +1,209 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <title>Poze</title>
+</head>
+<script>
+            var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // próximo/prévio
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // thumb
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+<body>
+    <table id="cabecalho">
+        <tr>
+            <td width="5%"> 
+            </td>
+            <td width="95%">
+               <img src="img/logo2.png" alt="logo" id="logo" align="center">
+            </td>
+       </tr> 
+   </table>
+
+    <table border="0" width="100%">
+        <br>
+        <br>
+        <tr> 
+            <td width="5%">
+            </td>
+            <td width="58%" id="col1">
+                <h2><b>MC POZE DO RODO</b></h2>
+            </td>
+            <td width="32%">
+            </td>
+            <td width="5%">
+        </tr>     
+        <tr>
+            <td width="5%">
+            </td>
+            <td width="58%" id="col1">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="img/poze1.jpg" style="width:950px; height: 500px;">
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="img/poze2.jpg" style="width:950px; height: 500px;">
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="img/poze3.jpg" style="width:950px; height: 500px;">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="img/poze4.jpg" style="width:950px; height: 500px;">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="img/poze5.jpg" style="width:950px; height: 500px;">
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+            </td>
+            <td width="32%" id="col2">
+                <p style="color: #9b1536; font-size: large;">
+                    <b>AK DO FLAMENGO</b>
+                </p>
+                <p style="font-size:x-large">
+                    <b>Graduação em MC</b>
+                </p>
+                <p class="fonte_peq">
+                    Titulação: <b>Poze</b>
+                </p>
+                <p class="fonte_peq">
+                    Modalidade: <b>do rodo</b>
+                </p>
+                <p class="fonte_peq">
+                    Duração: <b>20 anos</b>
+                </p>
+            </td>
+            <td width="5%">
+            </td>  
+        </tr>
+        <br>
+        <tr>
+            <td width="5%">
+            </td>
+            <td width="58%" id="col1">
+                <h3>To voando alto</h3>
+                <p class="conteudo">
+                    Eu 'tô voando alto, 
+                    fico na minha luta e trabalhador dobrado, é 
+                    todo o show elas 'tá me querendo, 
+                    sabe que o Poze é o cara do momento
+                </p>
+                <p class="conteudo">
+                    Fumo uma da braba 'pá poder passar o tempo, 
+                    e as que pisava hoje em dia ta rendendo, 
+                    ô, clipe, dinheiro pra nossa tropa tem, 
+                    humildade é lixo, mas sem render pra ninguém, 
+                    vou guardar meus cash pra multiplicar meus bens, 
+                    porque minha maior meta é deixar a minha família bem
+                </p>
+                <p class="conteudo">
+                    Ô, clipe, dinheiro pra nossa tropa tem, 
+                    humildade é lixo, mas sem render pra ninguém, 
+                    vou guardar meus cash pra multiplicar meus bens, 
+                    porque minha maior meta é deixar a minha família…
+                </p>
+                <br>
+                <br>
+                <h3>Vida louca</h3>
+                <p class="conteudo">
+                    O dia tá lindo, clima ensolarado, 
+                    clima de piscina, cervejinha e churrasco, 
+                    família intocável, fé inabalável, 
+                    peço a meu Deus que proteja meus aliado'
+                </p>
+                <p class="conteudo">
+                    Pois é, essa vida é muito louca, yeah, 
+                    e eu já fui, sei bem como é, 
+                    são vários mandadão que testa nossa fé, 
+                    mas se tiver mandado, volta de ré
+                </p>
+                <p class="conteudo">
+                    Pega o lanterna verde pra nós embrazar, 
+                    chama essas danada' que 'tão doida' pra sentar, 
+                    uh-la-la, patricinha vem da pista pra sarrar no AK, 
+                    vida de artista, todas elas quer me dar
+                </p>
+            </td>
+            <td width="32%" id="col_coord">
+                <h3>Coordenadores</h3>
+                <a id="icone">
+                <img src="img/icon2.jpg" alt="icon" id="icon" align="left">
+                </a>
+                <div id="informacoes">
+                <p>
+                <a style="font-size: larger;">MC POZE DO RODO</a>
+                <br>
+                <a style="font-size: small;">
+                    AK do Flamengo
+                    <br>
+                    Comando Vermelho
+                    <br>
+                    <a class="fonte_peq2">11 92469-6924</a>
+                    <br>
+                    <a class="fonte_peq2">pozemengao@gmail.com</a>            
+                </a>
+                </p>
+                </div>
+            </td>
+            <td width="5%">
+            </td>  
+        </tr> 
+    </table>
+
+</body>
+</html>
