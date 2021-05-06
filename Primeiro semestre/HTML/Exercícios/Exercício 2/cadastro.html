@@ -25,41 +25,41 @@
         <br>
         <br>
         <tr> 
-            <td width="5%">
+            <td width="15%">
             </td>
-            <td width="90%" id="col1">
-                <h2><b>Insira suas informações</b></h2>
+            <td width="70%" id="col1">
+                <h2 align="center"><b>Insira suas informações</b></h2>
             </td>
             </td>
-            <td width="5%">
+            <td width="15%">
         </tr>     
         <tr>
-            <td width="5%">
+            <td width="15%">
             </td>
-            <td width="90%">
+            <td width="70%">
                 <div id="cadastro">
                     <form>
                         <label for="nome">Nome: </label>
-                        <input type="text"   name="nome" placeholder="Digite seu nome">
-                        <br>
+                        <input type="text"   name="nome" placeholder="Insira seu nome">
+                        <br><br>
                         <label for="idade">Idade: </label>
-                        <input type="number" name="idade" placeholder="Digite sua idade">
-                        <br>
+                        <input type="number" name="idade" placeholder="Insira sua idade">
+                        <br><br>
                         <label for="senha">Senha: </label>
-                        <input type="password" name="senha" placeholder="Digite sua senha">
+                        <input type="password" name="senha" placeholder="Insira uma senha">
 
                     <br><br>
                     Sexo:
                     <br>
-                        <input type="checkbox" name="masculino" value="masculino">M
-                        <input type="checkbox" name="feminino" value="feminino">F
+                        <input type="radio" name="masculino" value="masculino">M
+                        <input type="radio" name="feminino" value="feminino">F
                     
                     <br><br>
                     Estado civil:
                     <br>
-                        <input type="checkbox" name="casado" value="casado">Casado
-                        <input type="checkbox" name="enrolado" value="enrolado">Enrolado
-                        <input type="checkbox" name="solteiro" value="solteiro">Solteiro
+                        <input type="radio" name="casado" value="casado">Casado
+                        <input type="radio" name="enrolado" value="enrolado">Enrolado
+                        <input type="radio" name="solteiro" value="solteiro">Solteiro
                    
                     <br><br>
                     Comida favorita:
@@ -82,19 +82,20 @@
 
                     <br><br>
                     E-mail: 
-                    <input type="email" name="email">
+                    <input type="email" name="email" placeholder="Insira seu e-mail">
 
                     <br><br>
                     Número: 
-                    <input type="number" name="numero">
+                    <input type="number" name="numero" placeholder="Insira um número">
 
-                    <br><br>
+                    <br><br><br>
                         <input type="submit" value="Enviar" onclick="msg()">
+                        <input type="reset" value="Limpar campos">
                     </form>
 
                 </div>
             </td>
-            <td width="5%">
+            <td width="15%">
             </td>  
         </tr>
     </table>
