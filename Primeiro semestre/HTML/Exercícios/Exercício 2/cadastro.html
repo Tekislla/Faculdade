@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <title>Exemplo estrutura sites</title>
+</head>
+<script>
+    function msg() {
+        alert("Dados enviados com sucesso!");
+    }
+</script>
+<body>
+    <table id="cabecalho">
+        <tr>
+            <td width="5%"> 
+            </td>
+            <td width="95%">
+               <a href="index.html"><img src="img/logo.png" alt="logo" id="logo" align="center"></a>
+            </td>
+       </tr> 
+   </table>
+
+    <table border="0" width="100%">
+        <br>
+        <br>
+        <tr> 
+            <td width="5%">
+            </td>
+            <td width="90%" id="col1">
+                <h2><b>Insira suas informações</b></h2>
+            </td>
+            </td>
+            <td width="5%">
+        </tr>     
+        <tr>
+            <td width="5%">
+            </td>
+            <td width="90%">
+                <div id="cadastro">
+                    <form>
+                        <label for="nome">Nome: </label>
+                        <input type="text"   name="nome" placeholder="Digite seu nome">
+                        <br>
+                        <label for="idade">Idade: </label>
+                        <input type="number" name="idade" placeholder="Digite sua idade">
+                        <br>
+                        <label for="senha">Senha: </label>
+                        <input type="password" name="senha" placeholder="Digite sua senha">
+
+                    <br><br>
+                    Sexo:
+                    <br>
+                        <input type="checkbox" name="masculino" value="masculino">M
+                        <input type="checkbox" name="feminino" value="feminino">F
+                    
+                    <br><br>
+                    Estado civil:
+                    <br>
+                        <input type="checkbox" name="casado" value="casado">Casado
+                        <input type="checkbox" name="enrolado" value="enrolado">Enrolado
+                        <input type="checkbox" name="solteiro" value="solteiro">Solteiro
+                   
+                    <br><br>
+                    Comida favorita:
+                    <br>
+                        <input type="checkbox" name="macarrao" value="macarrao">Macarrão
+                        <br>
+                        <input type="checkbox" name="frango" value="frango">Frango
+                    
+                    <br><br>
+                    Selecione seu arquivo:
+                    <input type="file" value="Selecione um arquivo">
+
+                    <br><br>
+                    Selecione uma cor:
+                    <input type="color" name="cor" value="#ff3333">
+
+                    <br><br>
+                    Selecione uma data: 
+                    <input type="date" name="data">
+
+                    <br><br>
+                    E-mail: 
+                    <input type="email" name="email">
+
+                    <br><br>
+                    Número: 
+                    <input type="number" name="numero">
+
+                    <br><br>
+                        <input type="submit" value="Enviar" onclick="msg()">
+                    </form>
+
+                </div>
+            </td>
+            <td width="5%">
+            </td>  
+        </tr>
+    </table>
+
+</body>
+</html>

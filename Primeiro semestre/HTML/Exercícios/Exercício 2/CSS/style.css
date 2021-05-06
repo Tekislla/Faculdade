@@ -63,6 +63,20 @@ body {
     padding-bottom: 37px;
 }
 
+#botao_cadastro {
+    background-color: #e1dfe3;
+    height: 50px;
+    width: 400px;
+    border-radius: 30px;
+    border:0;
+    font-size: large;
+    
+}
+
+#botao_cadastro:hover {
+    background-color: #eeedf0;
+}
+
 /*                           CAROUSEL                         */
 
 
