@@ -63,7 +63,7 @@ body {
     padding-bottom: 37px;
 }
 
-#botao_cadastro {
+.botao_direita {
     background-color: #e1dfe3;
     height: 50px;
     width: 400px;
@@ -73,8 +73,17 @@ body {
     
 }
 
-#botao_cadastro:hover {
+.botao_direita:hover {
     background-color: #eeedf0;
+}
+
+#cadastro {
+  border: solid;
+  border-radius: 10px;
+  border-color: #e1dfe3;
+  background-color: #eeedf0;
+  padding: 30px 30px 30px 100px;
+  
 }
 
 /*                           CAROUSEL                         */
