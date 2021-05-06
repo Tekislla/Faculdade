@@ -1,82 +1,94 @@
+/* html inteiro */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* body inteiro */
 body {
-    margin: 0;
+  margin: 0;
 }
+
+/* fonte do conteúdo na parte de baixo do index */
 .conteudo {
-    color: grey;
+  color: grey;
 }
 
+/* fonte menor */
 .fonte_peq {
-    font-size: smaller;
-    color:grey;
+  font-size: smaller;
+  color:grey;
 }
 
+/* fonte média para pequena */
 .fonte_peq2 {
-    font-size: small;
-    color:grey;
+  font-size: small;
+  color:grey;
 }
 
-#logo {
-    width: 170px;
-}
-
-#logo_carousel {
-    width: 60px;
-}
-
-#cabecalho {
-    height: 80px;
-    width: 100%;
-    background-color: #9b1536;
-}
-
-#col2 {
-    background-color: #f6f6f6;
-    padding-left: 3%;
-    padding-bottom: 5%;
-}
-
-#lado_video {
-    padding-left: 20%;
-}
-
-#icon {
-    border-radius: 50%;
-    width: 20%;
-    margin-top: 3%;
-    border-style: solid;
-    border-color: darkgrey;
-}
-
-#col_coord {
-    padding-left: 20px;
-    padding-bottom: 20%;
-}
-
-#informacoes {
-    padding-left: 120px;
-    border-style: solid;
-    border-color: white;
-    padding-bottom: 37px;
-}
-
+/* botão à direita do cadastro no index */
 .botao_direita {
-    background-color: #e1dfe3;
-    height: 50px;
-    width: 400px;
-    border-radius: 30px;
-    border:0;
-    font-size: large;
-    
+  background-color: #e1dfe3;
+  height: 50px;
+  width: 400px;
+  border-radius: 30px;
+  border:0;
+  font-size: large;
 }
 
+/* hover do botão à direita do cadastro no index */
 .botao_direita:hover {
-    background-color: #eeedf0;
+  background-color: #eeedf0;
 }
 
+
+/* logo da católica */
+#logo {
+  width: 170px;
+}
+
+/* logo da página do carousel */
+#logo_carousel {
+  width: 60px;
+}
+
+/* cabeçalho */
+#cabecalho {
+  height: 80px;
+  width: 100%;
+  background-color: #9b1536;
+}
+
+/* coluna ao lado do vídeo no index */
+#col2 {
+  background-color: #f6f6f6;
+  padding-left: 3%;
+  padding-bottom: 5%;
+}
+
+/* ícone coordenador index */
+#icon {
+  border-radius: 50%;
+  width: 20%;
+  margin-top: 3%;
+  border-style: solid;
+  border-color: darkgrey;
+}
+
+/* coluna de coordenador no index */
+#col_coord {
+  padding-left: 20px;
+  padding-bottom: 20%;
+}
+
+/* informações no index */
+#informacoes {
+  padding-left: 120px;
+  border-style: solid;
+  border-color: white;
+  padding-bottom: 37px;
+}
+
+/* div cadastro */
 #cadastro {
   border: solid;
   border-radius: 10px;
