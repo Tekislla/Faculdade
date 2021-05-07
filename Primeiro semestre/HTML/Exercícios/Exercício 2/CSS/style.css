@@ -27,12 +27,12 @@ body {
 
 /* botão à direita do cadastro no index */
 .botao_direita {
-  background-color: #e1dfe3;
+  font-size: large;
   height: 50px;
   width: 400px;
+  background-color: #e1dfe3;
   border-radius: 30px;
   border:0;
-  font-size: large;
 }
 
 /* hover do botão à direita do cadastro no index */
@@ -40,6 +40,38 @@ body {
   background-color: #eeedf0;
 }
 
+.botao_form {
+  font-weight: bold;
+  height: 45px;
+  width: 232px;
+  background-color: #e1dfe3;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #9b1536;
+}
+
+.botao_form:hover {
+  background-color: #9b1536;
+  color: white;
+}
+
+.campo_form {
+  width: 300px;
+  height: 30px;
+  border: 1px solid;
+  border-color: #9b1536;
+  border-radius: 5px;
+}
+
+#fundo {
+  background-image: url("../img/background.png");
+
+}
+
+/* botões do formulário de cadastro */
+#botoes_form{
+  text-align: center;
+}
 
 /* logo da católica */
 #logo {
@@ -60,46 +92,94 @@ body {
 
 /* coluna ao lado do vídeo no index */
 #col2 {
-  background-color: #f6f6f6;
-  padding-left: 3%;
-  padding-bottom: 5%;
+  padding: 0 0 5% 3%;
+  background-color: #f6f6f6; 
 }
 
 /* ícone coordenador index */
 #icon {
-  border-radius: 50%;
   width: 20%;
   margin-top: 3%;
   border-style: solid;
   border-color: darkgrey;
+  border-radius: 50%;
 }
 
 /* coluna de coordenador no index */
 #col_coord {
-  padding-left: 20px;
-  padding-bottom: 20%;
+  padding:0 0 20% 20px;
 }
 
 /* informações no index */
 #informacoes {
-  padding-left: 120px;
+  padding: 0 0 37px 120px;
   border-style: solid;
   border-color: white;
-  padding-bottom: 37px;
 }
 
 /* div cadastro */
 #cadastro {
-  border: solid;
-  border-radius: 10px;
-  border-color: #e1dfe3;
-  background-color: #eeedf0;
-  padding: 30px 30px 30px 100px;
+  
   
 }
 
-/*                           CAROUSEL                         */
+#campos_cadastro {
+  padding: 30px 0px 30px 0px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #9b1536;
+  background-color: #f6f6f6;
+  text-align: center;
+}
 
+
+
+/*        MUDAR COR DO RADIO     */
+
+.radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.radio-item input[type='radio'] {
+  display: none;
+}
+
+.radio-item label {
+  color: #666;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 11px;
+  border: 2px solid #9b1536;
+  background-color: transparent;
+}
+
+.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  content: " ";
+  display: block;
+  background: #9b1536;
+}
+
+
+
+/*                           CAROUSEL                         */
 
 * {box-sizing:border-box}
 

@@ -3,13 +3,9 @@
 <head>
     <link rel="stylesheet" href="CSS/style.css">
     <meta charset="UTF-8">
-    <title>Exemplo estrutura sites</title>
+    <title>Cadastro</title>
 </head>
-<script>
-    function msg() {
-        alert("Dados enviados com sucesso!");
-    }
-</script>
+<script type="text/javascript" src="js/script.js"></script>
 <body>
     <table id="cabecalho">
         <tr>
@@ -20,85 +16,112 @@
             </td>
        </tr> 
    </table>
+    <div id="fundo">
+        <table border="0" width="100%">
+            <br>
+            <br>
+            <tr> 
+                <td width="35%">
+                </td>
+                <td width="30%">
+                    <h2 align="center"><b>Cadastre-se!</b></h2>
+                </td>
+                </td>
+                <td width="35%">
+            </tr>     
+            <tr>
+                <td width="35%">
+                </td>
+                <td width="30%">
+                    <div id="cadastro">
+                        <div id="campos_cadastro">
+                        <form method="POST">
+                            Nome
+                            <br>
+                            <input type="text" name="nome" class="campo_form" placeholder="Insira seu nome" required>
+                            <br><br>
 
-    <table border="0" width="100%">
-        <br>
-        <br>
-        <tr> 
-            <td width="15%">
-            </td>
-            <td width="70%" id="col1">
-                <h2 align="center"><b>Insira suas informações</b></h2>
-            </td>
-            </td>
-            <td width="15%">
-        </tr>     
-        <tr>
-            <td width="15%">
-            </td>
-            <td width="70%">
-                <div id="cadastro">
-                    <form>
-                        <label for="nome">Nome: </label>
-                        <input type="text"   name="nome" placeholder="Insira seu nome">
-                        <br><br>
-                        <label for="idade">Idade: </label>
-                        <input type="number" name="idade" placeholder="Insira sua idade">
-                        <br><br>
-                        <label for="senha">Senha: </label>
-                        <input type="password" name="senha" placeholder="Insira uma senha">
+                            Usuário
+                            <br>
+                            <input type="text" name="usuario" class="campo_form" placeholder="Insira seu usuário" required>
+                            <br><br>
 
-                    <br><br>
-                    Sexo:
-                    <br>
-                        <input type="radio" name="masculino" value="masculino">M
-                        <input type="radio" name="feminino" value="feminino">F
-                    
-                    <br><br>
-                    Estado civil:
-                    <br>
-                        <input type="radio" name="casado" value="casado">Casado
-                        <input type="radio" name="enrolado" value="enrolado">Enrolado
-                        <input type="radio" name="solteiro" value="solteiro">Solteiro
-                   
-                    <br><br>
-                    Comida favorita:
-                    <br>
-                        <input type="checkbox" name="macarrao" value="macarrao">Macarrão
+                            Senha
+                            <br>
+                            <input type="password" name="senha" class="campo_form" placeholder="Insira uma senha" required>
+                            <br><br>
+
+                            E-mail
+                            <br>
+                            <input type="email" name="email" class="campo_form" placeholder="Insira seu e-mail" required>
+                            <br><br>
+
+                            Celular
+                            <br>
+                            <input type="tel" name="celular" class="campo_form" placeholder="Insira seu número de celular" required>
+                            <br><br>
+
+                            Data de nascimento
+                            <br>
+                            <input type="date" name="nascimento" class="campo_form" required>
+                            <br><br>
+
+                            Sexo
+                            <br>
+                            <select name="sexo" class="campo_form" required>
+                                <option value="" selected disabled hidden>Selecione uma opção</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="indefinido">Indefinido</option>
+                            </select>   
+                            
+                            <br><br>
+                            Estado civil
+                            <br>
+                            <select name="est_civil" class="campo_form" required>
+                                <option value="" selected disabled hidden>Selecione uma opção</option>
+                                <option value="paz">Mó paz</option>
+                                <option value="enrolado">Enrolado</option>
+                                <option value="solteiro">Solteiro</option>
+                                <option value="estavel">União estável</option>
+                                <option value="casado">Casado</option>
+                            </select> 
+                            <br><br><br>
+                            Você é:
+                            <br><br>
+                            <div class="radio-item">
+                                <input type="radio" name="tipo" id="estudante" value="estudante" required>
+                                <label for="estudante">Estudante</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" name="tipo" id="professor" value="professor">
+                                <label for="professor">Professor</label> 
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" name="tipo" id="coordenador" value="coordenador">
+                                <label for="coordenador">Coordenador</label> 
+                            </div>
+                            
+                            <br><br><br>
+                            Selecione uma foto de perfil
+                            <br><br>
+                            <input type="file" value="Selecione um arquivo">
+                    </div>
                         <br>
-                        <input type="checkbox" name="frango" value="frango">Frango
-                    
-                    <br><br>
-                    Selecione seu arquivo:
-                    <input type="file" value="Selecione um arquivo">
+                            <div id="botoes_form">
+                                <input type="submit" value="Enviar" class="botao_form" onclick="msg()">
+                                <input type="reset" value="Limpar campos" class="botao_form">
+                            </div>
+                        </form>
+                        <br><br><br><br><br>
 
-                    <br><br>
-                    Selecione uma cor:
-                    <input type="color" name="cor" value="#ff3333">
-
-                    <br><br>
-                    Selecione uma data: 
-                    <input type="date" name="data">
-
-                    <br><br>
-                    E-mail: 
-                    <input type="email" name="email" placeholder="Insira seu e-mail">
-
-                    <br><br>
-                    Número: 
-                    <input type="number" name="numero" placeholder="Insira um número">
-
-                    <br><br><br>
-                        <input type="submit" value="Enviar" onclick="msg()">
-                        <input type="reset" value="Limpar campos">
-                    </form>
-
-                </div>
-            </td>
-            <td width="15%">
-            </td>  
-        </tr>
-    </table>
+                    </div>
+                </td>
+                <td width="35%">
+                </td>  
+            </tr>
+        </table>
+    </div>
 
 </body>
 </html>
