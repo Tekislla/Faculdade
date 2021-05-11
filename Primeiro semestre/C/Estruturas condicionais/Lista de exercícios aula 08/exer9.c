@@ -1,4 +1,7 @@
-// PROBLEMA: Faça um programa que verifique se uma letra digitada é vogal ou consoante.
+// PROBLEMA: Faça um programa que verifique se o aluno foi aprovado:
+// Média = 10: Aprovado com distinção
+// Média > 7: Aprovado
+// Média < 7: Reprovado
 
 #include <stdio.h>
 #include <stdlib.h>

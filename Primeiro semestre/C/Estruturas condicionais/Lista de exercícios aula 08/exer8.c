@@ -1,4 +1,4 @@
-// PROBLEMA: Faça um programa que verifique se uma letra digitada é vogal ou consoante.
+// PROBLEMA: Faça um programa que agrupe três números em ordem crescente
 
 #include <stdio.h>
 #include <stdlib.h>

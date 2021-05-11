@@ -37,6 +37,5 @@ int main (void){
         printf("Turma idosa \n");
     }
     
-    
 	return 0;
 }

@@ -1,4 +1,4 @@
-// PROBLEMA: Faça um programa que peça um número e se este número for par, transforme-o em ímpar e vice-versa
+// PROBLEMA: Faça um programa que verifique se o número é inteiro ou quebrado
 
 #include <stdio.h>
 #include <stdlib.h>
