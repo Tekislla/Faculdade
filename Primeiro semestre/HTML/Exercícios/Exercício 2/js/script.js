@@ -1,5 +1,65 @@
-function msg() {
-    alert("Dados enviados com sucesso!");
+// Validar formulário
+
+function validar(){
+    var nome = formulario_cad.nome;
+    var usuario = formulario_cad.usuario;
+    var senha = formulario_cad.senha;
+    var email = formulario_cad.email;
+    var celular = formulario_cad.celular;
+    var nascimento = formulario_cad.nascimento;
+    var sexo = formulario_cad.sexo;
+    var est_civil = formulario_cad.est_civil;
+    var tipo = formulario_cad.tipo;
+
+    if (nome.value == "") {
+        alert("Informe seu nome!");
+        nome.focus();
+    }
+
+    if (usuario.value == "") {
+        alert("Informe seu usuário!");
+        usuario.focus();
+    }
+
+    if (senha.value == "") {
+        alert("Informe sua senha!");
+        senha.focus();
+    }
+
+    if (email.value == "") {
+        alert("Informe seu email!");
+        email.focus();
+    }
+
+    if (celular.value == "") {
+        alert("Informe seu celular!");
+        celular.focus();
+    }
+
+    if (nascimento.value == "") {
+        alert("Informe sua data de nascimento!");
+        nascimento.focus();
+    }
+
+    if (sexo.value == "") {
+        alert("Informe seu sexo!");
+        sexo.focus();
+    }
+
+    if (est_civil.value == "") {
+        alert("Informe seu estado civil!");
+        est_civil.focus();
+    }
+
+    if (tipo.value == "") {
+        alert("Informe se você é estudante, professor ou coordenador!");
+        tipo.focus();
+    }
+
+    if (nome.value != "" && usuario.value != "" && senha.value != "" && email.value != "" && celular.value != "" && nascimento.value != "" && sexo.value != "" && est_civil.value != "" && tipo.value != "") {
+        alert("Cadastro realizado com sucesso!");
+    }
+    
 }
 
 var slideIndex = 1;

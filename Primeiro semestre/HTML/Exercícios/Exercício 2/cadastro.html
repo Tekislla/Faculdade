@@ -35,7 +35,7 @@
                 <td width="30%">
                     <div id="cadastro">
                         <div id="campos_cadastro">
-                        <form method="POST">
+                        <form method="POST" name="formulario_cad">
                             Nome
                             <br>
                             <input type="text" name="nome" class="campo_form" placeholder="Insira seu nome" required>
@@ -109,7 +109,7 @@
                     </div>
                         <br>
                             <div id="botoes_form">
-                                <input type="submit" value="Enviar" class="botao_form" onclick="msg()">
+                                <input type="submit" value="Enviar" class="botao_form" onclick="validar()">
                                 <input type="reset" value="Limpar campos" class="botao_form">
                             </div>
                         </form>
