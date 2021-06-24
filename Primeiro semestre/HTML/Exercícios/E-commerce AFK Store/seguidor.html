@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <title>Seguidor de linha</title>
+</head>
+<body>
+    <nav>
+        <img class="logoequipe2" src="img/4.png">
+        <a href="index.html">AFK Society</a>
+        <ul>
+            <li> <a href="equipe.html">SOBRE NÓS</a> </li>
+            <li> <a href="robotica.html">ROBÓTICA NA TI</a> </li>
+            <li> <a href="seguidor.html">SEGUIDOR DE LINHA</a> </li>
+        </ul>
+    </nav>
+    <header id="topo">
+        <h1>Seguidor de Linha</h1>
+        <p>Um seguidor de linha (também conhecido como “Follow line”) é uma categoria de robôs autônomos, que são parecidos com carros de corrida, pois a combinação de motores, sensores e inteligência artificial,
+            <br>faz com que objetivo seja percorrer um determinado percurso no menor tempo possível.</p>
+        <p>É feito competição de seguidores de linha em diversos lugares do mundo, o robô precisa estar em cima de uma manta de borracha, com uma marcação em branco para ele seguir.
+            <br>Em Joinville, temos a equipe Wickedbotz, formada por alunos da Católica, que todo ano fazem batalhas de seguidores de linha. </p>
+        <a href="https://www.facebook.com/WickedBotz" class="botao"> Equipe Wickedbotz</a>
+    </header>
+    <section id="TX2">
+        <br><br><br>
+        <h2> Projeto Seguidor de linha </h2>
+        <p>Durante as aulas de PAC da primeira fase de Engenharia de Software, realizamos o projeto de um seguidor de linha no site https://www.tinkercad.com, onde utilizamos:</p>
+        <table>
+            <tr>
+                <td width="50%">
+                   <li>Uma bateria 9V</li>
+                   <li>Uma Arduino uno R3</li>
+                   <li>Duas placas de ensaio mini</li>
+                   <li>Dois motores CC</li>
+                   <li>Um acionador de motor</li>
+                </td>
+                <td width=50%>
+                   <li>Um interruptor deslizante</li>
+                   <li>Sete resistores</li>
+                   <li>Um led RGB</li>
+                   <li>Quatro fotorresistores</li>
+                   <li>E diversas ligações de fio</li>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <div id="back" id="TX2">
+       <br><br><br>
+       <img id="img_seguidor" src="img/seguidor_de_linha.png" class="aligncenter" alt=""/>
+       <br><br>
+       <div id="codigo">
+        <xmp>// MOTOR
+            #define IN1 2
+            #define IN2 4
+            #define IN3 7
+            #define IN4 5
+            #define ENA 3
+            #define ENB 6
+            // LED RGB
+            #define LEDR 9
+            #define LEDB 10
+            #define LEDG 11
+            // SENSOR
+            #define S1 A0
+            #define S2 A1
+            #define S3 A2
+            #define S4 A3
+            void setup()
+            {
+              // MOTOR
+              pinMode(IN1,OUTPUT);
+              pinMode(IN2,OUTPUT);
+              pinMode(IN3,OUTPUT);
+              pinMode(IN4,OUTPUT);
+              pinMode(ENA,OUTPUT);
+              pinMode(ENB,OUTPUT);
+              analogWrite(ENA,255);
+              analogWrite(ENB,255);
+              // LED RGB
+              pinMode(LEDR, OUTPUT);
+              pinMode(LEDB, OUTPUT);
+              pinMode(LEDG, OUTPUT);
+              Serial.begin(9600);
+            }
+            void loop()
+            {
+              // Leitura dos sensores
+              int s1, s2, s3, s4;
+              s1=analogRead(S1);
+              s2=analogRead(S2);
+              s3=analogRead(S3);
+              s4=analogRead(S4);
+              int luz = 500;
+              Serial.print(s1);
+              Serial.print(" ");
+              Serial.print(s2);
+              Serial.print(" ");
+              Serial.print(s3);
+              Serial.print(" ");
+              Serial.print(s4);
+              Serial.print(" ");
+              if(s1<luz && s2>luz && s3>luz && s4<luz){
+                //frente
+                Serial.println(" Frente ");
+                digitalWrite(LEDR, LOW);
+                digitalWrite(LEDG, HIGH);
+                digitalWrite(LEDB, LOW);
+                digitalWrite(IN1,HIGH);
+                digitalWrite(IN2,LOW);
+                digitalWrite(IN3,LOW);
+                digitalWrite(IN4,HIGH);
+              }else if (s1>luz && s2<luz && s3<luz && s4<luz){
+                // direita
+                Serial.println(" Direita ");
+                digitalWrite(LEDR, HIGH);
+                digitalWrite(LEDG, LOW);
+                digitalWrite(LEDB, LOW);
+                digitalWrite(IN1,LOW);
+                digitalWrite(IN2,HIGH);
+                digitalWrite(IN3,LOW);
+                digitalWrite(IN4,HIGH);
+              }else if (s1<luz && s2<luz && s3<luz && s4>luz){
+                // esquerda
+                Serial.println(" Esquerda ");
+                digitalWrite(LEDR, HIGH);
+                digitalWrite(LEDG, LOW);
+                digitalWrite(LEDB, LOW);
+                digitalWrite(IN1,HIGH);
+                digitalWrite(IN2,LOW);
+                digitalWrite(IN3,HIGH);
+                digitalWrite(IN4,LOW);
+              }else{
+                // desligado
+                Serial.println(" Parado ");
+                digitalWrite(LEDR, LOW);
+                digitalWrite(LEDG, LOW);
+                digitalWrite(LEDB, HIGH);
+                digitalWrite(IN1,LOW);
+                digitalWrite(IN2,LOW);
+                digitalWrite(IN3,LOW);
+                digitalWrite(IN4,LOW);
+              }
+            }
+        </xmp>
+       </div>
+       <br>
+    </div>
+    </body>
+    </html>

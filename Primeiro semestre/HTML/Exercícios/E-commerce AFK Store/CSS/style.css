@@ -1,0 +1,281 @@
+body{
+    font-family: 'Nunito', sans-serif; 
+    color: #1c1c1c;
+    background-color: black;
+}
+h1, h2, h3{
+    font-family: 'Asap', sans-serif;
+    color: #000000;
+}
+
+.carousel_text{
+    color: black;
+}
+
+.botao{
+    color:#ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #370064;
+    font-size: .9em;
+    border-radius: 3px;
+}
+.logoequipe{
+    width: 10em;
+}
+.logoequipe2{
+    width: 6em;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #130022;
+    color: white;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: 'Jockey One', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align:center;
+    width: 100%;
+
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/3.1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+header h1{
+    color: #ffffff;
+
+}
+
+header p{
+    margin-bottom: 2em;
+}
+
+#TX2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    padding: 10px 10px 30px 30px;
+    background-color: #370064;
+    color: #ffffff;  
+}
+#TX2 h2{
+    color: #ffffff;
+
+}
+#TX2 p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+#TX2 .botao{
+    background-color:#f1f1f1;
+    color: #1c1c1c;
+}
+#TX3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+#TX3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+#img_seguidor{
+    height: 400px;
+    width: 600px;
+    image-rendering: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 10px #130022;
+
+}
+#TX2 h2{
+    color: #ffffff;
+
+}
+#TX2 p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+#back{
+    padding: 0%;
+    background-color: #370064;
+    background-size: auto;
+
+}
+
+#codigo{
+    background-color: white;
+    border-left: 450px;
+    border-right: 450px;
+    border-style: solid;
+    border-color: #370064;
+
+}
+
+/* OPCÃO PRA FOTOS . OPCIONAL 
+#fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:20px;
+}
+#fotos h2{
+    margin-bottom: 20px;
+
+}
+#fotos img{
+    width: 100%;
+    
+}
+*/
+#TX3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#TX3 h2 {
+    color: #000000;
+}
+
+footer{
+    text-align:center;
+    padding: 10px;
+    background-color: #43007a;
+    color:#ffffff;
+}
+footer a{
+    text-decoration: none;
+    color:#00ffff; 
+}
+@media screen and (min-width: 768px) {
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+
+    }
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    #TX2 {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    #TX3 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #TX3 h2{
+        text-align: center;
+        width: 100%;
+    }
+    #TX3 div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    #TX4 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width:  500px;
+        margin: 0 auto;
+    }
+    #TX4 h2, #TX4 p{
+        width: 100%;
+    }
+}
+.carrosel{
+    width: 350px;
+    overflow: hidden; 
+    height: 350px;
+    margin: auto;
+}
+.carrosel ul{
+    list-style: none;
+     width: 1750px;
+     height: 350px;
+     display: flex;
+}
+.carrosel li{
+    position: relative;
+    animation: slide 20s infinite ease-out;
+}
+
+@keyframes slide{
+    0%{left: 0px;}
+
+    20%{left: -350px;}
+
+    40%{left: -700px;}
+
+    60%{left: -1050px;}
+
+    80%{left: -1400px;}
+
+    100%{left:0px;}
+}
