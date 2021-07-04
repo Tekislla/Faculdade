@@ -7,11 +7,32 @@ h1, h2, h3{
     font-family: 'Asap', sans-serif;
     color: #000000;
 }
+.imguser{
+    width: 8%;
+}
 
 .botao_produto{
     background-color:#370064;
     border: none;
     color: white;
+}
+
+.botao_produto:hover{
+    color: #0A58B4;
+}
+
+.botao_cadastro{
+    background-color:#130022;
+    border: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.botao_cadastro:hover{
+    color: #0A58B4;
+    text-decoration: underline;
 }
 
 .carousel_text{
@@ -26,6 +47,25 @@ h1, h2, h3{
     font-size: .9em;
     border-radius: 3px;
 }
+
+.botao:hover{
+    background-color: white;
+    color: #43007a;
+}
+
+.botao_produtos_index{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: white;
+    font-size: .9em;
+    border-radius: 3px;
+    color: #5a0d99;
+}
+.botao_produtos_index:hover{
+    background-color: #190138;
+    color: white;
+}
+
 .logoequipe{
     width: 10em;
 }
