@@ -8,6 +8,12 @@ h1, h2, h3{
     color: #000000;
 }
 
+.botao_produto{
+    background-color:#370064;
+    border: none;
+    color: white;
+}
+
 .carousel_text{
     color: black;
 }
@@ -26,11 +32,25 @@ h1, h2, h3{
 .logoequipe2{
     width: 10em;
 }
+.midia{
+    height: 40px;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 .tenisafk{
     width: 4em;
 }
-
+.carrinho{
+    width: 3em;
+}
+.tenis{
+    width: 10rem;
+    padding: 0%;
+    background-size: auto;
+}
 nav {
     display: flex;
     flex-direction: column;
@@ -158,11 +178,21 @@ header p{
 }
 
 #codigo{
-    background-color: white;
     border-left: 450px;
     border-right: 450px;
     border-style: solid;
     border-color: #370064;
+
+}
+.fundo{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -279,7 +309,84 @@ footer a{
 
     60%{left: -1050px;}
 
-    80%{left: -1400px;}
-
     100%{left:0px;}
+}
+.product-container{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.product-box{
+    display: flex;
+    flex-grow: 0.5;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #5a0d99;
+    border-radius: 10px;
+    margin: 20px;
+}
+.product-img{
+    width:200px;
+    height: 210px;
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.product-img img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid #43007a;
+}
+.p-name{
+    color: white;
+}
+.p-price{
+    color: #a730d0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.product-box:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+.add-cart{
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #43007a;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    display: none;
+    animation: fade 0.3s;
+ 
+}
+.add-cart:hover{
+    background-color: #370064;
+    transition: all ease 0.2s;
+}
+.product-box:hover .add-cart{
+    display: flex;
+}
+.new-arrival{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
