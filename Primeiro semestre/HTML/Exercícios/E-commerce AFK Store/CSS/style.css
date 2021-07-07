@@ -91,6 +91,11 @@ h1, h2, h3{
     padding: 0%;
     background-size: auto;
 }
+
+.btn{
+    background-color: #370064;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -429,4 +434,144 @@ footer a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.slide{
+    position:absolute;
+    opacity: 0;
+    animation-name: animação;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes animação{
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.slide:nth-child(1){
+
+}
+.slide:nth-child(2){
+    animation-delay: 3s;
+}
+.slide:nth-child(3){
+    animation-delay: 6s;
+}
+.slide:nth-child(4){
+    animation-delay: 9s;
+}
+.slide-1{
+    position:absolute;
+    opacity: 0;
+    animation-name: animação-1;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes animação-1{
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.slide-1:nth-child(1){
+
+}
+.slide-1:nth-child(2){
+    animation-delay: 3s;
+}
+.slide-1:nth-child(3){
+    animation-delay: 6s;
+}
+.slide-1:nth-child(4){
+    animation-delay: 9s;
+}
+.slide-2{
+    position:absolute;
+    opacity: 0;
+    animation-name: animação-2;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes animação-2{
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.slide-2:nth-child(1){
+
+}
+.slide-2:nth-child(2){
+    animation-delay: 3s;
+}
+.slide-2:nth-child(3){
+    animation-delay: 6s;
+}
+.slide-2:nth-child(4){
+    animation-delay: 9s;
+}
+.slide-3{
+    position:absolute;
+    opacity: 0;
+    animation-name: animação-3;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes animação-3{
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.slide-3:nth-child(1){
+
+}
+.slide-3:nth-child(2){
+    animation-delay: 3s;
+}
+.slide-3:nth-child(3){
+    animation-delay: 6s;
+}
+.slide-3:nth-child(4){
+    animation-delay: 9s;
+}
+.slide-4{
+    position:absolute;
+    opacity: 0;
+    animation-name: animação-4;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes animação-4{
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.slide-4:nth-child(1){
+
+}
+.slide-4:nth-child(2){
+    animation-delay: 3s;
+}
+.slide-4:nth-child(3){
+    animation-delay: 6s;
+}
+.slide-4:nth-child(4){
+    animation-delay: 9s;
 }
