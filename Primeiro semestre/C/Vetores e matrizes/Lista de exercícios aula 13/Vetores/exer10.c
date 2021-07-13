@@ -1,31 +1,34 @@
-/*
-10. Construa um algoritmo que leia um vetor de 20 elementos e coloque-os em 
-ordem crescente.
-R.
-*/
+/*10. Construa  um  algoritmo  que  leia  um  vetor  de  20  elementos  e  coloque-os  em ordem crescente.R.:*/
+
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
+#define TAM 6
 
 int main (void){
-    int vetor[10], i, aux;
+    // variáveis    
+    int vet[TAM], i;
 
-    for(i=0;i<10;i++){
-        printf("Digite o %i numero: ",i+1);
-        scanf("%i",&vetor[i]);
+    // entrada de dados    
+    for(i=0;i<TAM;i++){
+        printf("Digite o %i numero : ",i+1);
+        scanf("%i",&vet[i]);
         fflush(stdin);
     }
 
-    for(i=0;i<=9;i++){
-        if (vetor[i] > vetor[i+1]){
-            aux = vetor[i];
-            vetor[i] = vetor[i+1];
-            vetor[i+1] = aux;
+    // processameto    
+    int aux, j;
+    for(i=1;i<TAM;i++){
+        for(j=0;j<TAM-i;j++){
+            if(vet[j]>vet[j+1]){
+                aux=vet[j];
+                vet[j]=vet[j+1];
+                vet[j+1]=aux;
+            }
         }
     }
 
-    for (i = 0; i <= 9; i++) {
-        printf("%i, ",vetor[i]);
+    for(i=0;i<TAM;i++){
+        printf("%i, ",vet[i]);
     }
-    
     return 0;
 }
