@@ -1,2 +1,0 @@
-# Faculdade
-Coisas da faculdade
