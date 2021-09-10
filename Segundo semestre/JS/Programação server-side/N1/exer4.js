@@ -1,3 +1,6 @@
+console.log(calculaPreco(1,1000))
+
+
 function calculaPreco(tipo, area){
 	var custoFinal = 0;
     var custoProvisorio = 0;
@@ -50,4 +53,3 @@ function calculaPreco(tipo, area){
  	return "O valor total a ser pago é R$" + custoFinal + ",00";
 }
 
- console.log(calculaPreco(1,1000))

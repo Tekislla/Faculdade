@@ -13,7 +13,6 @@ function saqueBanco(valor){
     }
 
     var saqueRec = function(valor,indice){
-        var saque = [];
         var indiceMax = notaMax(valor,indice);
         if (indiceMax >= cofre.length) {
             return [];
