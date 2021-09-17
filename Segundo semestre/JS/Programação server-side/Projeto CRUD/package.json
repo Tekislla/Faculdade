@@ -1,0 +1,14 @@
+{
+  "name": "projeto-crud",
+  "version": "1.0.0",
+  "description": "primeiro projeto crud js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Pedro Lazarim",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
