@@ -40,9 +40,21 @@ con.query('SELECT * FROM TESTE', (erro, rows) => {
 });
 
 // Atualizar valor do banco de dados (UPDATE)
+con.query('UPDATE teste SET nome = ? WHERE id = ?',
+  ['Vanessinha', 2], (erro,result) => {
+      if(erro) throw erro;
+
+      console.log('Change d ', result)
+  }
+)
 
 
 // Remover algo do banco de dados (DELETE)
+con.query('DELETE FROM teste WHERE id = ?', [7], (erro, result) => {
+    if (erro) throw erro;
+  console.log(`Exclui ${result.affectedRows} row(s)`);
+}
+);
 
 
 
@@ -56,4 +68,3 @@ con.end((erro) => {
 
     console.log("\nConexão finalizada.");
 });
-
