@@ -1,0 +1,12 @@
+GET http://localhost:5000/get-dispositivos HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:5000/add-dispositivo HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_disptvo": "dispositivo",
+    "descr_disptvo": "meu primeiro dispositivo"
+}
