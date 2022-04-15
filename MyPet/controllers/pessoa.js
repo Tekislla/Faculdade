@@ -29,7 +29,7 @@ export const createPessoa = async (req, res) => {
   try {
     await pessoa.create(req.body)
     res.json({
-      "Mensagem": "Uma nova pessoa foi inserida no banco de dados."
+      "Mensagem": "Uma nova pessoadd foi inserida no banco de dados."
     })
   } catch (erro) {
     console.log(erro)
