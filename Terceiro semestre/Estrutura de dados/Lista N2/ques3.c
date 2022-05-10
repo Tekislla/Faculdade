@@ -24,7 +24,6 @@ int main (void) {
 	}
 	
 	imprimir(lista);
-	listaOrdenada(lista);
 	
 	return 0;
 }
@@ -33,14 +32,5 @@ void imprimir(NUMEROS *lista) {
 	while(lista != NULL) {
 		printf("lista->n: %i \n",lista->n);
 		lista = lista->prox;
-	}
-}
-
-void listaOrdenada(NUMEROS *lista) {
-	if (lista->n > lista->prox->n) {
-		printf("lista desordenada");
-		lista->n = lista->prox;
-	} else {
-		printf("lista ordenada");
 	}
 }
