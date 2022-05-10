@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adicione um pet</title>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    <link rel="shortcut icon" href="assets/img/urlicon.png">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="text-center">
+    
+    <main class="form-signin">
+      <div id="signup">
+        <a href="index-logged.html"><img class="mb-4" src="assets/img/logo.png" alt="" width="110" height="90"></a>
+        <h1 class="h3 mb-3 fw-normal">Adicione um pet</h1>
+        <div class="form-floating">
+          <label for="floatingInput">Nome</label>
+          <input type="text" class="form-control" name="name" id="floatingInput" placeholder="Nome">
+          <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Tipo (cão, gato, macaco, etc.)</label>
+          <input type="text" class="form-control" name="type" id="floatingInput" placeholder="Tipo">
+          <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Raça</label>
+          <input type="text" class="form-control" name="race" id="floatingInput" placeholder="Raça">
+          <br> 
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Cidade</label>
+          <input type="text" class="form-control" name="city" id="floatingInput" placeholder="Cidade">
+          <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Estado</label>
+          <input type="text" class="form-control" name="state" id="floatingInput" placeholder="Estado">
+          <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Idade (em meses)</label>
+          <input type="number" class="form-control" name="age" id="floatingInput" placeholder="Idade">
+          <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Email para contato</label>
+          <input type="email" class="form-control" name="contactEmail" id="floatingInput" placeholder="Email">
+          <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Foto</label>
+          <input type="file" name="fileupload" id="fileupload" placeholder="Foto">
+        </div>
+        <br><br>
+        <button class="w-100 btn btn-lg btn-primary" onclick="savePet()" style="background-color: #F2B66D; border: none;">Adicionar</button>
+        <p class="mt-5 mb-3 text-muted">&copy; AFK Society - 2021</p>
+      </div>
+    </main>
+  </body>
+</html>
