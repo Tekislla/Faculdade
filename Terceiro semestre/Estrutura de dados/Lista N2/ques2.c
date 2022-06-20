@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TAM 2
+#define TAM 3
 
 typedef struct nomes{
 	char *nome;
@@ -29,8 +29,8 @@ int main (void) {
 		NOMES *novo = (NOMES*) malloc(sizeof(NOMES));
 		printf("Digite o nome %i da lista 2: ", i + 1);
 		gets(novo->nome);
-		novo->prox=lista2;
-		lista2=novo;
+		novo->prox = lista2;
+		lista2 = novo;
 	}
 		
 	comparar(lista1, lista2);
@@ -48,7 +48,7 @@ void comparar(NOMES *lista1, NOMES *lista2) {
         	NOMES *novo = (NOMES*) malloc(sizeof(NOMES));
             novo->nome = atual1->nome;
             novo->prox = lista3;
-            lista3=novo;
+            lista3 = novo;
         }
 
         atual1 = atual1->prox;

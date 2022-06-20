@@ -19,8 +19,8 @@ int main (void) {
 		NUMEROS *novo = (NUMEROS*) malloc(sizeof(NUMEROS));
 		printf("Digite o numero %i: ", i + 1);
 		scanf("%i", &novo->n);
-		novo->prox=lista;
-		lista=novo;
+		novo->prox = lista;
+		lista = novo;
 	}
 	
 	imprimir(lista);
