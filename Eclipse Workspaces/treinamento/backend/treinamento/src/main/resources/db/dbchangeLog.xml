@@ -1,0 +1,55 @@
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+	<changeSet id="treinamento" author="eduardo">
+		<createTable tableName="aluno">
+			<column name="id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="nome" type="varchar(80)" />
+			<column name="cpf" type="bigint" />
+			<column name="idade" type="int" />
+			<column name="senha" type="varchar(50)" />
+		</createTable>
+		<createTable tableName="professor">
+			<column name="id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="nome" type="varchar(80)" />
+			<column name="cpf" type="bigint" />
+			<column name="idade" type="int" />
+			<column name="senha" type="varchar(50)" />
+		</createTable>
+		<createTable tableName="exercicio">
+			<column name="id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="nome" type="varchar(80)" />
+			<column name="tipo_exercicio" type="varchar(80)" />
+			<column name="numero_series" type="int" />
+			<column name="repeticoes" type="int" />
+		</createTable>
+		<createTable tableName="treino">
+			<column name="id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="aluno_id" type="bigint">
+				<constraints foreignKeyName="fk_treino_aluno" references="aluno(id)" />
+			</column>
+			<column name="professor_id" type="bigint">
+				<constraints foreignKeyName="fk_treino_professor" references="professor(id)" />
+			</column>
+			<column name="hora" type="bigint" />
+			<column name="dia_treino" type="varchar(20)" />
+		</createTable>
+		<createTable tableName="treino_exercicio">
+			<column name="treino_id" type="bigint" />
+			<column name="exercicio_id" type="bigint" />
+		</createTable>
+	</changeSet>
+	
+	
+</databaseChangeLog>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Cadastrar o exercício</title>
+    <link rel="stylesheet" href="cadastrodetreino.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="dark-mode-container">
+            <img src="/moon-4-24.png" alt="" class="moon">
+            <label class="switch">
+                <input type="checkbox" onclick="myFunction()">
+                <span class="slider round"></span>
+            </label>
+            <img src="/sun-24.png" alt="" class="sun">
+        </div>
+    </div>
+    <div id="form">
+        <div class="data">
+            <label for="treino">Selecione o treino:</label>
+                <select list="treino" id="tipoExercicio">
+                    <option value="Peito e tríceps">Peito e tríceps</option>
+                    <option value="Costas e bíceps">Costas e bíceps</option>
+                    <option value="Pernas">Pernas e ombros</option>
+                </select>
+            <label for="exercicio">Nome do exercício:</label>
+                <input type="text" id="exercicioNomeCad" placeholder="Insira o nome do exercício...">
+            <label for="series">Séries:</label>
+                <input type="number" id="seriesExercicioCad" placeholder="Insira a quantidade de séries...">
+            <label for="repeticoes">Repetições:</label>
+                <input type="number" id="repeticoesExercicioCad" placeholder="Insira a quantidade de repetições...">
+            
+            <div class="buttons">
+                <a href="../professor/checkprofessor.html">
+                    <input type="submit" value="Cadastrar treino" id="submit" onclick="cadastraExercicio()">
+                </a>
+                <a href="../professor/loginprofessor.html">
+                    <input type="button" value="Voltar" id="voltar">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

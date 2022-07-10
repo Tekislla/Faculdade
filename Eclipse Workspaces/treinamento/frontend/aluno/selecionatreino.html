@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Selecionar o treino</title>
+    <link rel="stylesheet" href="selecionatreino.css">
+    <script src="../js/script.js"></script>
+</head>
+<body onload="mostraProfessores()">
+    <div id="header">
+        <div class="dark-mode-container">
+            <img src="/moon-4-24.png" alt="" class="moon">
+            <label class="switch">
+                <input type="checkbox" onclick="myFunction()">
+                <span class="slider round"></span>
+            </label>
+            <img src="/sun-24.png" alt="" class="sun">
+        </div>
+    </div>
+    <div id="form">
+        <div class="data">
+            <label for="treino">Selecione o treino:</label>
+            <select list="treino" id="tipoTreinoAluno">
+                    <option value="Peito e tríceps">Peito e tríceps</option>
+                    <option value="Costas e bíceps">Costas e bíceps</option>
+                    <option value="Pernas">Pernas e ombros</option>
+            </select>   
+            <label for="dia-do-treino">Selecione o dia do treino:</label>
+            <select list="dia-do-treino" id="dia-do-treino">
+                <option value="segunda-feira">Segunda-feira</option>
+                <option value="terca-feira">Terça-feira</option>
+                <option value="quarta-feira">Quarta-feira</option>
+                <option value="quinta-feira">Quinta-feira</option>
+                <option value="sexta-feira">Sexta-feira</option>
+                <option value="sabado">Sábabo</option>
+            </select>
+            <label for="hora">Selecione o horário:</label>
+            <select list="hora" id="hora">
+                <option value="6">06:00</option>
+                <option value="7">07:00</option>
+                <option value="8">08:00</option>
+                <option value="9">09:00</option>
+                <option value="10">10:00</option>
+                <option value="11">11:00</option>
+                <option value="12">12:00</option>
+                <option value="13">13:00</option>
+                <option value="14">14:00</option>
+                <option value="15">15:00</option>
+                <option value="16">16:00</option>
+                <option value="17">17:00</option>
+                <option value="18">18:00</option>
+                <option value="19">19:00</option>
+                <option value="20">20:00</option>
+                <option value="21">21:00</option>
+                <option value="22">22:00</option>
+                <option value="23">23:00</option>                
+            </select>
+            <label for="professor">Selecione o professor:</label>
+            <select name="professor" id="professorTreino">
+                
+            </select>
+            <div class="buttons">
+                <input type="submit" value="Agendar treino" id="submit" onclick="cadastraTreino()">
+                <a href="../aluno/loginaluno.html">
+                    <input type="button" value="Voltar" id="voltar">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
