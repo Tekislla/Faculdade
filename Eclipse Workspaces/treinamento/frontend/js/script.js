@@ -113,10 +113,6 @@ function mostraTreino() {
     infosTreino.innerHTML += "Treino do dia <br>";
     infosTreino.innerHTML += "Hora: " + localStorage.getItem("hora") + "<br>";
     infosTreino.innerHTML += "Dia: " + localStorage.getItem("diaTreino") + "<br>";
-    let exercicios = localStorage.getItem("exercicios");
-    for(i = 0; i < exercicios.length; i++) {
-        infosTreino.innerHTML += "Exercício " + (i+1) + ": " + exercicios[i]["nome"] + " - " + exercicios[i]["numeroSeries"] + " séries - " + exercicios[i]["repeticoes"] +" repetições <br>";
-    }
 }
 
 function mostraProfessores() {
