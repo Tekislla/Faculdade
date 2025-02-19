@@ -1,0 +1,8 @@
+História de usuário ex 1:
+- Necessito de um programa para a locomoção de um trem autônomo, onde ele siga os comandos dados por mim, para assim, minimizar a chance de erro humano e garantir um funcionamento estável através de comandos previamente passados à ele.
+
+História de usuário ex 2:
+- Necessito de um programa para a locomação de um trêm autônomo que trabalhe com um limite de movimento, pois o trilho que ele seguirá não é infinito, e é necessário ter essa trava de segurança para que não ocorra nenhuma tragédia. O trem tem que obedecer os comandos passados à ele, mas nunca deve exceder os limites do trilho.
+
+História de usuário ex 3:
+- Necessito de um programa onde eu possa passar os comandos em tempo real para o trem para que ele execute logo em seguida. Preciso que o programa opere tanto para um trem que ande em um trilho finito quanto em um trem que ande em um trilho infinito, eu devo passar para o programa qual tipo de trilho o trem está, a posição inicial, os comandos e o limite do trem.

@@ -1,0 +1,57 @@
+create database registro;
+
+use registro;
+
+CREATE TABLE IF NOT EXISTS `registro`.`categorias` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+INSERT INTO `categorias` (`nome`) VALUES
+('Padaria'),
+('Doces'),
+('Salgados'),
+('Produtos de Limpeza');
+
+
+CREATE TABLE IF NOT EXISTS `registro`.`forma_pagto` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+INSERT INTO `forma_pagto` (`nome`) VALUES
+('Cartão de Crédito'),
+('Cartão de Débito'),
+('PIX'),
+('Dinheiro');
+
+
+CREATE TABLE IF NOT EXISTS `registro`.`fornecedores` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+INSERT INTO `fornecedores` (`nome`) VALUES
+('Nestle'),
+('Açougue'),
+('Dona Benta'),
+('Bally');
+
+CREATE TABLE IF NOT EXISTS `registro`.`despesas` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `descricao` VARCHAR(255) NOT NULL,
+  `categoria_id` INT NOT NULL,
+  `valor` DECIMAL(10,2) NOT NULL,
+  `data` DATE NOT NULL,
+  `forma_pagamento_id` INT NOT NULL,
+  `fornecedor_id` INT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+INSERT INTO `despesas` (`descricao`, `categoria_id`, `valor`, `data`, `forma_pagamento_id`, `fornecedor_id`) VALUES
+('Pão', 1, 5.00, '2023-04-19 00:00:00', 3, 2),
+('Bis', 2, 3.00, '2023-04-19 00:00:00', 2, 1),
+('Pastel', 3, 6.00, '2023-04-19 00:00:00', 1, 2);
